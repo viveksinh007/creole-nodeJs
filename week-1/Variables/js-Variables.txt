@@ -1,0 +1,79 @@
+> Introduction to Variables
+
+    Most of the time, a JavaScript application needs to work with information. Here are two examples:
+
+        - An online shop – the information might include goods being sold and a shopping cart.
+        - A chat application – the information might include users, messages, and much more.
+
+    Variables are used to store this information.
+
+    A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+
+    To create a variable in JavaScript, use the specific keyword like ( let , var , const ).
+
+    for now we will using the let keyword.
+
+    The statement below creates (in other words: declares) a variable with the name “message”:
+
+    let message;
+    
+    Now, we can put some data into it by using the assignment operator ' = '. 
+
+    let message;
+
+    message = 'Hello'; // store the string 'Hello' in the variable named message
+
+    alert(message); // shows the variable content in popup  
+
+
+    For defining multiple variables in this multiline style:
+
+    let user = 'John' , age = 25 , message = 'Hello';
+
+> To declare a Javascript variable, one must know the rules to follow, as one can mess up the code while declaring a variable. If one doesn't follow the rules, he/she may end up getting an error.
+
+    Rules are as follows:
+
+        - Variables are case-sensitive in Javascript. This means that schoolName and schoolname are considered different variables.
+        
+        - We can use letters, digits, symbols like dollar sign ($) and underscore ( _ ) in a variable name.
+        
+        - We cannot start a variable name with a digit (0-9).
+        
+        - We cannot use any of the reserved keywords (function, return, typeof, break, etc.) of Javascript as a variable name.
+
+    Important Points
+    
+        - Javascript allows multiple white spaces and even line breaks in a declaration of a variable.
+    
+        - We can separate different variable declarations using a comma.
+    
+        - In Javascript, we can store any type of value in a variable and also change it any time ( not in const and yeah specially const objects are exception).
+
+
+>> Types Of Variables
+
+    
+> var , let , const 
+
+    var: 
+
+    - function scope
+    - re declarable
+
+    let:
+
+    - block scope
+    - not re declarable
+
+    const: 
+
+    - block scope
+    - not reassignable
+    - not re declarable
+    - must be assign while defining 
+
+    Note : all variable created by this keyword are hoisted (always declared at top of scope, global if none)
+
+    mean you need to define a variable before accessing it .
+

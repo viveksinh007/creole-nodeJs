@@ -1,0 +1,81 @@
+> Functions
+
+    Quite often we need to perform a similar action in many places of the script.
+
+    For example, we need to show a nice-looking message when a visitor logs in, logs out and maybe somewhere else.
+
+    Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
+
+    Note : We’ve already seen examples of built-in functions, like alert(message) to pop the message in current tab . But we can create functions of our own as well.
+
+> Function Declaration
+
+    To create a function we can use a function declaration.
+
+    It looks like this:
+
+    Syntax : 
+
+    // Without Parameter 
+
+    function showMessage() {
+    alert( 'Hello everyone!' );
+    }
+
+    The function keyword goes first, then goes the name of the function, then a list of parameters between the parentheses (comma-separated, empty in the example above, we’ll see examples later) and finally the code of the function, also named “the function body”, between curly braces.
+
+
+    // With Parameter
+
+    function name(parameter1, parameter2, ... parameterN) {
+        // body
+    }
+
+
+    Our new function can be called by its name: NameOfYourFunction().
+    
+    Note : Pass Parameter if the function have Parameters list in function Declaration.
+
+    For instance:
+
+    function showMessage() {
+    alert( 'Hello everyone!' );
+    }
+
+    showMessage();
+    showMessage();
+
+
+> Default values
+
+    If a function is called, but an argument is not provided, then the corresponding value becomes undefined.
+
+    For instance, the aforementioned function showMessage(from, text) can be called with a single argument: 
+
+    showMessage("Ann");
+    That’s not an error. Such a call would output "*Ann*: undefined". As the value for text isn’t passed, it becomes undefined.
+
+We can specify the so-called “default” (to use if omitted) value for a parameter in the function declaration, using =:
+
+function showMessage(from, text = "no text given") {
+  alert( from + ": " + text );
+}
+
+showMessage("Ann"); // Ann: no text given
+Now if the text parameter is not passed, it will get the value "no text given".
+
+The default value also jumps in if the parameter exists, but strictly equals undefined, like this:
+
+showMessage("Ann", undefined); // Ann: no text given
+Here "no text given" is a string, but it can be a more complex expression, which is only evaluated and assigned if the parameter is missing. So, this is also possible:
+
+function showMessage(from, text = anotherFunction()) {
+  // anotherFunction() only executed if no text given
+  // its result becomes the value of text
+}
+
+
+function expression 
+
+A function expression is very similar to and has almost the same syntax as a function declaration (see function statement for details). The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions.
+
