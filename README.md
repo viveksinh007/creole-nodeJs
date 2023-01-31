@@ -9,7 +9,7 @@
 
 ### 3. For Running the File Go to Folder Path 
 
-### 4. Open Teminal There and run File With node [File Name] with extension
+### 4. Open Teminal There and run File With Prefix "node" [File Name] with extension
 
 
 
