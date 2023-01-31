@@ -1,0 +1,65 @@
+> Ecosystem
+
+    What is the JavaScript ecosystem?
+
+        -> The JavaScript ecosystem is a collection of software packages, libraries, and other resources that facilitate development as they integrate with each other. Those tools are created by different developers and providers – for example, the React library is powered by Facebook, while the nodejs developed by Ryan Dahl .
+
+    
+
+
+
+> For Running the JavaScript in environment
+
+    What is a Runtime Environment?
+    
+    A runtime environment is where your program will be executed. 
+    
+    It determines what global objects your program can access and it can also impact how it runs.
+
+    --------------------------------------------------------------------------------------------------------------------------------
+
+    JavaScript can be execute in web browsers , local and remote machines.
+
+    for web browsers -> 
+
+                    1. Create External Script in environment and attached it to the file ( html ) .
+                    2. Use Script tag to write the script in html file .
+    
+    for local machines ->
+
+                    1. Install NodeJs in environment and execute the script by passing the script file .
+
+                    syntax  : node path/file.js
+                    Example : node file.js 
+
+    for running the script in online mode ->
+
+                    best web in my opinion
+
+                        - https://codepen.io/
+
+                        - https://playcode.io/ 
+                        
+                        Feature i like the most
+
+                        ( where you don't need to open the devtool for console logs )
+
+    
+> IDE / Code Editors
+
+    ->Sublime Text 3 ( simple / easy but not good for complex / large projects )  ( Free )
+
+    -> WebStorm ( Paid ) from JetBrains software family 
+
+    -> Vs Code ( not "Visual Studio" this is different from that . this is lightweight source code editor with ) ( Free )
+
+    -> in my opinion use vs code editor this is great i have worked with this tool for more than a year . this tool have many extensions that helps you to make your project management easy , code formatting , automatically code completion .
+
+    -> the most important it has git integrated so no need to open another terminal for that with gui where not commands need to be typed.
+
+    -> the second most important Feature where when you open the editor and change the content of the file you can see the changes like git in timeline
+
+    , but after closing the editor it will be cleared.
+
+
+

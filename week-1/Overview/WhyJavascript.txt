@@ -1,0 +1,48 @@
+What Exactly is JavaScript?
+
+    Not to be confused with Java, JavaScript—created by Netscape Communications—first appeared in 1995. Its developers define it as a “scripting or programming language that allows you to implement complex things on web pages.” JavaScript makes web pages more dynamic and user-friendly so that they respond to visitors’ actions. Or, to put it another way, JavaScript makes web pages interactive.
+
+    JavaScript was once called LiveScript; but due to Java’s popularity, it was rebranded to take advantage of that fame. You could say that the newer language hitched its wagon to the rising star and went along for the ride, attracting its vast following in the process.
+
+    
+    1) It’s the most popular programming language 
+    
+    We start our list with possibly the most significant reason! According to Stackoverflow.com Almost 70% developers are using JavaScript .
+    JavaScript is the most popular programming language used by professional developers today. 
+
+
+How JavaScript works?
+
+    -> In contrast, JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. More modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+
+
+Event Loop 
+
+    -> The event loop is the secret behind JavaScript's asynchronous 
+    programming. JS executes all operations on a single thread, but using a 
+    few smart data structures, it gives us the illusion of multi-threading.
+
+Easy Definition : 
+
+    The Event Loop has one simple job — to monitor the Call Stack and the 
+    Callback Queue or Message Queue. 
+
+    If the Call Stack is empty, it will take the first event from the
+    Callback queue and will push it to the Call Stack, which effectively runs it. 
+
+    Such an iteration is called a tick in the Event Loop. 
+    Each event is just a function callback.
+
+Easiest explanation : 
+
+    -> When any Asynchronous event occur such as setTimeOut or promises... 
+    Then these tasks take some time to complete I/O if they have any. 
+    If they completed their I/O or don't have any, then they simply pushed 
+    into message queue or callback queue. Then event loop will firstly execute 
+    the call stack tasks and then look for callback or message queue and then 
+    execute it..
+
+
+call stack 
+
+    -> A JavaScript call stack is an example of a stack data structure. In a JS call stack, the elements are function invocations. Every time you invoke a function, it's added to the stack. If it has a nested function, that nested function will get added to the top of the stack as well, and so on.
