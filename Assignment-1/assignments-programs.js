@@ -89,11 +89,12 @@ console.log(
 function findLongestWordFromString(myString) {
   let wordarr = myString.split(" ");
 
-  max = Math.max([wordarr.length]);
+  let allwlen = wordarr.map((el) => el.length);
 
-  const word = wordarr.filter((w) => w.length === max);
+  let maxlen = Math.max(...allwlen);
+  const word = wordarr.filter((el) => el.length == maxlen);
 
-  return `${word} with max ${max} length `;
+  return `${word} with max ${maxlen} length `;
 }
 
 // console.log(
