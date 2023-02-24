@@ -3,7 +3,7 @@
 
 # Steps
 
-### 1. First Clone the repo into your local Machine
+### 1. First Clone the repo into your local Machine glkdf sgldf
 
 ### 2. node js must be installed if not then install it
 
